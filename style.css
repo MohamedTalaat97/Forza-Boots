@@ -3,6 +3,9 @@ body {
         sans-serif;
 }
 
+section {
+    padding: 2em 0;
+}
 
 .btn {
 
@@ -32,4 +35,60 @@ body {
     background-color: #222;
     background-blend-mode: multiply;
     background-attachment: fixed;
+}
+
+.section-title {
+
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1em;
+}
+
+.products .flex {
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.products .flex>* {
+
+    flex-basis: 30%;
+    min-width: 15em;
+}
+
+.product {
+
+    display: block;
+    position: relative;
+    transition: transform 200ms ease-in-out;
+
+}
+
+.products .product:hover {
+
+    transform: scale(1.1);
+}
+
+.products .product::after {
+    content: '';
+    background-color: #2193b0;
+    position: absolute;
+    padding: 75% 75% 0 0;
+    top: 10%;
+    left: 10%;
+    border-radius: 50%;
+    z-index: -1;
+    display: inline-block;
+}
+
+
+.products .product:hover .price {
+    opacity: 100%;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    opacity: 0;
+    transition: opacity 100ms ease-in-out;
 }
