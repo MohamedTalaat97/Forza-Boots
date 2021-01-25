@@ -109,6 +109,9 @@ pre {
     padding: 10px;
 }
 
+.spacing>*+* {
+    margin-top: 1rem;
+}
 
 /* utility */
 
