@@ -92,3 +92,21 @@ section {
     opacity: 0;
     transition: opacity 100ms ease-in-out;
 }
+
+/* our */
+
+
+.our-products .product {
+    background: radial-gradient(#e66465, #9198e5);
+    padding: 3em;
+    border-radius: 1em;
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+.our-products .product h3 {
+
+    font-size: 4rem;
+    line-height: 1.1;
+    color: white;
+}
